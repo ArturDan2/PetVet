@@ -10,7 +10,6 @@
 body {
   text-decoration: none;
   text-align: center;
-  overflow-x: hidden;
 }
 
 /* ------ HEADER ------*/
@@ -18,7 +17,7 @@ body {
 nav {
   position: fixed; /*--LARGE SCREEN--*/
   width: 100%;
-  z-index: 999;
+  z-index: 9;
   height: 65px;
 }
 
@@ -27,13 +26,6 @@ nav {
   transition: all 0.6s ease;
 }
 
-/* #F0301D ?
-F09D05
-056FF0 - fajny, troche agresywny moze zamienic logo na tło
-#1454A3 - fajny
-#3A5E8A - najlepszy
-#465970 - podobny do najlepszego :)
-#85A9D6 */
 
 .nav-transparent {
   background-color: transparent;
@@ -325,8 +317,7 @@ p {
 .create-profile {
   /*--CREATE PROFILE MAIN PAGE!!--*/
   background-color: #7a9cc6;
-  width: 200%;
-  margin-left: -50%;
+  width: 100%;
   margin-top: 30px;
   padding-bottom: 25px;
 }
@@ -342,8 +333,6 @@ p {
 }
 .create-profile p {
   text-align: center;
-  margin: 15px 400px;
-  padding: 0px 150px;
 }
 
 .container-3 {
@@ -599,7 +588,6 @@ footer p {
     position: static;
     opacity: 1;
     visibility: visible;
-    /* padding-left: 10px; */
     margin-top: 10px;
     background-color: transparent;
     color: white;
@@ -673,13 +661,12 @@ footer p {
   }
   .create-profile p {
     text-align: center;
-    margin: 15px 25%;
+    margin: 15px;
     padding: 0px 50px;
   }
 
   .create-profile h1 {
     text-align: center;
-    margin: 15px 30% 0;
     border-top: none;
   }
   .container-3 {
