@@ -20,7 +20,9 @@ h3{
   font-size: 1.3rem;
 }
 /* ------ HEADER ------*/
-
+a{
+  cursor: pointer;
+}
 nav {
   position: fixed; /*--LARGE SCREEN--*/
   width: 100%;
@@ -380,8 +382,10 @@ p {
 }
 .start-services {
   /*--START SERVICES PAGE!!--*/
-  height: 35vh;
+  height: 15rem;
   flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
   background-color: #ffffffa8;
   box-shadow: inset 0 0 0 1000px #507097c7;
 }
@@ -391,7 +395,6 @@ p {
 }
 
 .start-services h2 {
-  margin-top: 5rem;
   margin-left: 2rem;
   color: whitesmoke;
   font-weight: 300;
@@ -794,7 +797,12 @@ footer p {
   .sidebar-buttons button {
     margin-top: 0.5rem;
   }
-
+  .start-text{
+    margin-left: 1.2rem;
+  }
+  .start , .start-services{
+    background-position: -100px -120px;
+  }
   .main-rest{
     max-width: 100%;
     padding: 0rem;
@@ -824,16 +832,16 @@ footer p {
     justify-content: center;
   }
 
-  .start-services h1 {
+  .start-services h2 {
     font-size: 30px;
   }
   
-  .service-description h2 {
+  .service-description h3 {
     margin-top: 1rem;
   }
 
   .start-services-text {
-    margin-top: 90px;
+    margin-bottom: 1rem;
   }
 
   .service-picture,
@@ -862,6 +870,12 @@ footer p {
 }
 
 @media screen and (max-width: 400px) {
+  .start h2{
+    font-size: 1.7rem;
+  }
+  .start h3{
+    font-size: 1.2rem;
+  }
   .container-3{
     grid-gap: 0.5rem 1rem;
     margin: 1.5rem 0;
