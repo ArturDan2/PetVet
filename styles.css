@@ -81,7 +81,7 @@ nav .nav-wrapper {
 .nav-links .drop-menu {
   background: white;
   width: 15%;
-  top: 4.7rem;
+  top: 4.6rem;
   line-height: 2rem;
   position: absolute;
   opacity: 0;
@@ -234,7 +234,7 @@ p {
   background-position: 0px -250px;
   padding-top: 5vh;
   background-attachment: fixed;
-  background-color: #ffffffa8;
+  background-color: #8297bea8;
 }
 
 .start h2,
@@ -746,19 +746,6 @@ footer p {
     padding-left: 20px;
   }
   
-  .container-3 {
-    /*--SMALL SERVICES--*/
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(4, 75px);
-  }
-  
-  .container-3 li a {
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 75px;
-  }
-
 
   #drop-uslugi,
   #drop-wlasciciel {
@@ -797,15 +784,17 @@ footer p {
   .sidebar-buttons button {
     margin-top: 0.5rem;
   }
+
+  .main-rest{
+    max-width: 100%;
+    padding: 0rem;
+  }
+  
   .start-text{
     margin-left: 1.2rem;
   }
   .start , .start-services{
     background-position: -100px -120px;
-  }
-  .main-rest{
-    max-width: 100%;
-    padding: 0rem;
   }
 
   .about-pictures {
@@ -823,6 +812,20 @@ footer p {
     min-width: 80vw;
     max-width: 80vw;
   }
+
+  .container-3 {
+    /*--SMALL SERVICES--*/
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 75px);
+  }
+  
+  .container-3 li a {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+  }
+
 
   /*--MOBILE SERVICES PAGE--*/
 
@@ -879,5 +882,12 @@ footer p {
   .container-3{
     grid-gap: 0.5rem 1rem;
     margin: 1.5rem 0;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  .start , .start-services{
+    background-attachment: scroll ;
   }
 }
