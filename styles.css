@@ -12,13 +12,20 @@ body {
   text-align: center;
 }
 
+h2{
+  font-size: 2.3rem;
+}
+
+h3{
+  font-size: 1.3rem;
+}
 /* ------ HEADER ------*/
 
 nav {
   position: fixed; /*--LARGE SCREEN--*/
   width: 100%;
   z-index: 9;
-  height: 65px;
+  height: 10vh;
 }
 
 .nav-colored {
@@ -32,15 +39,10 @@ nav {
   transition: all 0.6s ease;
 }
 
-.nav-wrapper .logo img {
-  width: 82.34px;
-  height: 59.55px;
-}
-
 nav .nav-wrapper {
   max-width: 100%;
-  padding-top: 11px;
   margin: 2.5px 20px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,13 +56,13 @@ nav .nav-wrapper {
 .nav-wrapper .profile {
   display: flex;
   align-items: flex-end;
-  margin-left: 20px;
+  margin-left: 1.5rem;
 }
 .nav-links li a {
   text-decoration: none;
   font-size: 16px;
-  padding: 4px 10px;
-  margin-right: 5px;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.25rem;
   color: white;
   font-weight: 300;
   border-radius: 0.5px;
@@ -71,21 +73,19 @@ nav .nav-wrapper {
 
 #drop-uslugi,
 #drop-wlasciciel {
-  padding-bottom: 22px;
+  padding-bottom: 1.6rem;
 }
 
 .nav-links .drop-menu {
   background: white;
   width: 15%;
-  min-width: 190px;
-  top: 65px;
-  line-height: 35px;
+  top: 4.7rem;
+  line-height: 2rem;
   position: absolute;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease-out;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-  z-index: -10;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links li:hover .drop-menu {
@@ -120,8 +120,7 @@ nav .nav-wrapper {
 .nav-wrapper .logo {
   display: flex;
   align-items: flex-start;
-  margin-right: 20px;
-  margin-left: 40px;
+  margin-left: 1rem;
   font-size: 22px;
 }
 
@@ -148,8 +147,8 @@ nav .nav-wrapper {
 
 .nav-wrapper .nav-btn.cancel-btn {
   position: absolute;
-  right: 30px;
-  top: 22.5px;
+  right: 2rem;
+  top: 1.5rem;
 }
 
 .sidebar-buttons {
@@ -162,8 +161,8 @@ nav .nav-wrapper {
 }
 
 button {
-  padding: 8px 15px;
-  margin-right: 10px;
+  padding: 0.6rem 1rem;
+  margin-right: 1rem;
   border: 1px solid white;
   color: white;
   font-size: 16px;
@@ -193,14 +192,14 @@ a:hover {
 /* ------ MAIN ------ */ /* ---- !!MAIN PAGE!! ----*/
 
 p {
-  padding: 15px;
+  padding: 1.5rem;
   text-align: justify;
 }
 
-.main-rest h1 {
+.main-rest h3 {
   text-align: center;
-  margin-top: 55px;
-  padding: 5px 10px;
+  margin-top: 4rem;
+  padding: 0.5rem 1rem;
   color: #7a9cc6;
   font-size: 40px;
   font-weight: 300;
@@ -208,44 +207,47 @@ p {
   display: inline-block;
 }
 
+.service-description h3{
+  border-top: none;
+  margin-top: 0rem;
+}
+
 .main-rest {
-  padding: 20px 50px;
-  max-width: 1176px;
+  padding: 2rem 2rem;
+  max-width: 85vw;
   margin: auto;
   float: none;
   background-color: white;
 }
-.start {
+.start , .start-services{
   /*--START MAIN PAGE!!--*/
-  height: 400px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   background-image: url("Glowna/images/vet_start3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -250px;
+  padding-top: 5vh;
   background-attachment: fixed;
-  margin-top: 0;
-  padding-top: 0;
   background-color: #ffffffa8;
 }
 
-.start h1,
-.start h2 {
-  width: 200px;
+.start h2,
+.start h3 {
+  width: 40%;
   text-align: justify;
-  margin-top: 30px;
   color: whitesmoke;
   font-weight: 300;
 }
 .start-text {
   text-align: left;
-  margin-left: 60px;
-  margin-top: 60px;
+  margin-left: 5rem;
 }
 .start-btn {
-  margin-top: 10px;
+  margin-top: 1.2rem;
 }
 .about {
   /*--ABOUT MAIN PAGE!!--*/
@@ -254,7 +256,7 @@ p {
 }
 
 .about-pictures {
-  margin-top: 20px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -275,17 +277,17 @@ p {
 }
 .doctors {
   /*--DOCTORS MAIN PAGE!!--*/
-  height: 125px;
-  width: 125px;
+  height: 8rem;
+  width: 8rem;
   border: 5px solid #507097de;
   border-radius: 50%;
 }
 
-.doctor-box h2 {
+.doctor-box h4 {
   font-size: 20px;
   font-weight: 400;
   color: #507097de;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .doctors-list {
   display: flex;
@@ -296,15 +298,15 @@ p {
 
 .doctor-box {
   /* margin: 25px; */
-  margin: 25px 30px;
-  max-width: 322.8px;
-  min-width: 322.8px;
+  margin: 2rem 1rem;
+  max-width: 21rem;
+  min-width: 21rem;
   background-color: #7a9cc67c;
   font-weight: 300;
   font-size: 16px;
   color: #383838;
   padding: 25px 15px;
-  height: 465px;
+  height: 30rem;
   border-top: 5px solid #7a9cc6;
   box-shadow: 0 15px 15px #0000001a;
 }
@@ -318,18 +320,18 @@ p {
   /*--CREATE PROFILE MAIN PAGE!!--*/
   background-color: #7a9cc6;
   width: 100%;
-  margin-top: 30px;
-  padding-bottom: 25px;
+  margin-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .create-profile button:hover {
   background-color: #ffffff36;
 }
 
-.create-profile h1 {
+.create-profile h3 {
   color: white;
   border-top: 1px solid white;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 .create-profile p {
   text-align: center;
@@ -340,8 +342,8 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 100px);
-  grid-gap: 15px 30px;
-  margin: 25px 0px;
+  grid-gap: 1rem 2rem;
+  margin: 2rem;
 }
 
 .uslugi {
@@ -351,6 +353,11 @@ p {
   align-items: center;
   list-style: none;
 }
+
+.uslugi h4{
+  font-size: 1.8rem;
+}
+
 
 .container-3 li {
   background-color: whitesmoke;
@@ -367,25 +374,14 @@ p {
 
 .container-3 li a {
   display: block;
-  width: 200px;
-  height: 100px;
   text-align: center;
   vertical-align: middle;
   line-height: 100px;
 }
 .start-services {
   /*--START SERVICES PAGE!!--*/
-  height: 250px;
-  display: flex;
+  height: 35vh;
   flex-direction: column;
-  align-items: flex-start;
-  background-image: url("Glowna/images/vet_start3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px -250px;
-  background-attachment: fixed;
-  margin-top: 0;
-  padding-top: 0;
   background-color: #ffffffa8;
   box-shadow: inset 0 0 0 1000px #507097c7;
 }
@@ -394,9 +390,9 @@ p {
   margin-top: 80px;
 }
 
-.start-services h1 {
-  width: 600px;
-  margin-top: 90px;
+.start-services h2 {
+  margin-top: 5rem;
+  margin-left: 2rem;
   color: whitesmoke;
   font-weight: 300;
   font-size: 50px;
@@ -405,20 +401,24 @@ p {
 
 .servicespage-container {
   /*--MAIN SERVICES PAGE!!--*/
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 25rem;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+
+.servicespage-container img{
+  object-fit: cover;
+  width: 100%;
+}
+
 .servicespage-container:first-child {
   margin-top: 50px;
 }
-.servicespage-container:first-child {
-  margin-bottom: 50px;
-}
+
 .servicespage-container:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -427,14 +427,16 @@ p {
   flex-direction: row;
 }
 
-.icon {
-  height: 400px;
+/* change name icon!!!!!!*/
+.icon { 
+  height: 25rem;
   background-color: white;
   box-shadow: 0 1px 1px #0000001a;
 }
+
 .service-icon {
   display: flexbox;
-  height: 400px;
+  height: 25rem;
   opacity: 0.7;
   width: 100%;
 }
@@ -443,12 +445,12 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 400px;
+  height: 25rem;
   background-color: #eef2f8;
   box-shadow: 0 1px 1px #0000001a;
 }
 .service-description p {
-  margin: 5px 20px;
+  margin: 0rem 0.5rem;
 }
 
 .servicespage-container:nth-child(even) .service-description {
@@ -457,8 +459,8 @@ p {
 
 .servicespage-container:nth-child(even) .icon {
   width: 45%;
-  margin-left: 10px;
-  min-width: 524.69px;
+  margin-left: 1rem;
+  min-width: 33rem;
 }
 
 .servicespage-container:nth-child(odd) .service-description {
@@ -467,8 +469,8 @@ p {
 
 .servicespage-container:nth-child(odd) .icon {
   width: 55%;
-  margin-right: 10px;
-  min-width: 641.31px;
+  margin-right: 1rem;
+  min-width: 38rem;
 }
 
 .service-icon:hover {
@@ -497,23 +499,20 @@ footer {
 }
 .footer-nav,
 .footer-contact {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
-.footer-nav,
-.footer-contact {
-  list-style: none;
-  text-align: center;
-}
+
 footer a {
-  margin-right: 6px;
+  margin-right: 0.5rem;
 }
 
 footer p {
-  padding-right: 5px;
+  padding-right: 0.4rem;
 }
 
 .footer-nav {
@@ -524,6 +523,13 @@ footer p {
 
 @media screen and (max-width: 1155px) {
   /*---SMALL SCREEN--*/
+  p{
+    font-size: 1rem;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
 
   .nav-wrapper .nav-btn {
     /*--SMALL NAV--*/
@@ -544,13 +550,13 @@ footer p {
     position: fixed;
     height: 100vh;
     width: 100%;
-    max-width: 350px;
+    max-width: 30vw;
     background: #3a5e8a;
     display: block;
     top: 0;
     overflow-y: auto;
-    line-height: 50px;
-    padding: 50px 10px;
+    line-height: 2rem;
+    padding: 5rem 1rem;
     box-shadow: 0 15px 15px #00000026;
     transition: all 0.3s ease;
   }
@@ -564,14 +570,14 @@ footer p {
   }
 
   .nav-links li {
-    margin: 15px 10px;
+    margin: 1rem 0.5rem;
     display: block;
   }
 
   .nav-links li a {
-    padding: 0px 20px;
+    width: 100%;
     display: block;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: left;
   }
 
@@ -581,30 +587,32 @@ footer p {
 
   #drop-uslugi,
   #drop-wlasciciel {
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
   }
 
   .nav-links .drop-menu {
     position: static;
     opacity: 1;
     visibility: visible;
-    margin-top: 10px;
+    margin-top: 0.5rem;
     background-color: transparent;
     color: white;
     width: 50%;
     top: 65px;
-    line-height: 35px;
+    line-height: 2rem;
     box-shadow: none;
-    z-index: -10;
+    z-index: -2;
     border-left: solid 1px #28466b;
   }
   .nav-links .drop-menu li {
     margin: 0;
   }
   .nav-links .drop-menu li a {
-    font-size: 18px;
+    font-size: 0.8rem;
     color: white;
-    padding-left: 25px;
+    padding-left: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
   }
 
   .nav-links li:hover .drop-menu {
@@ -626,14 +634,10 @@ footer p {
 
   .fa-angle-down {
     display: inline-block !important;
-    margin-left: 10px;
+    margin-left: 1rem;
     transition: all 0.2s ease-in;
   }
 
-  .drop-btn-mobile {
-    background-color: #f5f5f53d;
-    color: white;
-  }
 
   .drop-li:hover a {
     background-color: unset;
@@ -653,19 +657,24 @@ footer p {
   }
   .doctor-box {
     height: fit-content;
+    width: 40vw;
+    min-width: 40vw;
+    max-width: 40vw;
+  }
+  .doctor-box h2{
+    font-size: 1.3rem;
   }
 
   .create-profile {
     /*--SMALL CREATE PROFILE--*/
-    padding-bottom: 15px;
+    padding-bottom: 2rem;
   }
   .create-profile p {
     text-align: center;
-    margin: 15px;
-    padding: 0px 50px;
+    margin: 1rem;
   }
 
-  .create-profile h1 {
+  .create-profile h3 {
     text-align: center;
     border-top: none;
   }
@@ -681,39 +690,27 @@ footer p {
     height: auto;
   }
 
-  .servicespage-container:nth-child(even) {
-    flex-direction: column;
-  }
-
+  .servicespage-container:nth-child(even),
   .servicespage-container:nth-child(odd) {
     flex-direction: column;
   }
 
+
   .service-icon,
   .service-description {
-    height: 400px;
-    width: 524.69px;
+    height: 25rem;
+    width: 65vw;
     object-fit: cover;
   }
 
-  .servicespage-container:nth-child(even) .service-description {
-    width: 524.69px;
-  }
 
-  .servicespage-container:nth-child(even) .icon {
-    width: 524.69px;
-    margin-left: 0px;
-    min-width: 524.69px;
-  }
-
+  .servicespage-container:nth-child(even) .icon,
+  .servicespage-container:nth-child(odd) .icon,
+  .servicespage-container:nth-child(even) .service-description,
   .servicespage-container:nth-child(odd) .service-description {
-    width: 524.69px;
-  }
-
-  .servicespage-container:nth-child(odd) .icon {
-    width: 524.69px;
-    margin-right: 0px;
-    min-width: 524.69px;
+    width: 65vw;
+    margin: 0;
+    min-width: 65vw;
   }
 
   .icon {
@@ -736,7 +733,6 @@ footer p {
 
 @media screen and (max-width: 715px) {
   /*--MOBILE-DEVICE--*/
-
   .account-btn {
     /*--MOBILE-NAV--*/
     display: none;
@@ -746,10 +742,62 @@ footer p {
     display: block;
     padding-left: 20px;
   }
+  
+  .container-3 {
+    /*--SMALL SERVICES--*/
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 75px);
+  }
+  
+  .container-3 li a {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+  }
 
-  .main-rest {
-    /*--MOBILE-MAIN--*/
-    padding: 20px 0px;
+
+  #drop-uslugi,
+  #drop-wlasciciel {
+    padding-bottom: 0rem;
+  }
+
+  .nav-wrapper .nav-links {
+    max-width: 60vw;
+  }
+
+  .nav-links .drop-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    color: white;
+    width: 50%;
+    top: 65px;
+    line-height: 4rem;
+    box-shadow: none;
+    z-index: -2;
+    border-left: solid 1px #28466b;
+  }
+  .nav-links .drop-menu li {
+    margin: 0;
+  }
+  .nav-links .drop-menu li a {
+    font-size: 1rem;
+    color: white;
+    padding-left: 1rem;
+  }
+  .sidebar-buttons {
+    padding: 0.25rem 0.5rem;
+  }
+  .sidebar-buttons button {
+    margin-top: 0.5rem;
+  }
+
+  .main-rest{
+    max-width: 100%;
+    padding: 0rem;
   }
 
   .about-pictures {
@@ -758,8 +806,14 @@ footer p {
   }
 
   .about-photo {
-    width: 70%;
-    margin-top: 5px;
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  .doctor-box {
+    width: 80vw;
+    min-width: 80vw;
+    max-width: 80vw;
   }
 
   /*--MOBILE SERVICES PAGE--*/
@@ -771,8 +825,11 @@ footer p {
   }
 
   .start-services h1 {
-    font-size: 35px;
-    width: 455px;
+    font-size: 30px;
+  }
+  
+  .service-description h2 {
+    margin-top: 1rem;
   }
 
   .start-services-text {
@@ -781,32 +838,32 @@ footer p {
 
   .service-icon,
   .service-description {
-    height: 400px;
-    width: 460px;
-    object-fit: cover;
+    width: 95vw;
   }
-
-  .servicespage-container:nth-child(even) .service-description {
-    width: 460px;
-  }
-
-  .servicespage-container:nth-child(even) .icon {
-    width: 460px;
-    margin-left: 0px;
-    min-width: 460px;
-  }
-
+  .servicespage-container:nth-child(even) .icon,
+  .servicespage-container:nth-child(odd) .icon,
+  .servicespage-container:nth-child(even) .service-description,
   .servicespage-container:nth-child(odd) .service-description {
-    width: 460px;
-  }
-
-  .servicespage-container:nth-child(odd) .icon {
-    width: 460px;
-    margin-right: 0px;
-    min-width: 460px;
+    width: 95vw;
+    margin: 0;
+    min-width: 95vw;
   }
 
   footer {
-    font-size: 13px;
+    font-size: 15px;
+  }
+  .footer-nav{
+    flex-direction: column;
+  }
+  .footer-nav li{
+    padding: 0.5rem;
+  }
+ 
+}
+
+@media screen and (max-width: 400px) {
+  .container-3{
+    grid-gap: 0.5rem 1rem;
+    margin: 1.5rem 0;
   }
 }
