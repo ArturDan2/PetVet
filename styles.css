@@ -226,7 +226,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-image: url("Glowna/images/vet_start3.jpg");
+  background-image: url("images/vet_start3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -250px;
@@ -428,13 +428,13 @@ p {
 }
 
 /* change name icon!!!!!!*/
-.icon { 
+.picture-container { 
   height: 25rem;
   background-color: white;
   box-shadow: 0 1px 1px #0000001a;
 }
 
-.service-icon {
+.service-picture {
   display: flexbox;
   height: 25rem;
   opacity: 0.7;
@@ -457,7 +457,7 @@ p {
   width: 55%;
 }
 
-.servicespage-container:nth-child(even) .icon {
+.servicespage-container:nth-child(even) .picture-container {
   width: 45%;
   margin-left: 1rem;
   min-width: 33rem;
@@ -467,13 +467,13 @@ p {
   width: 45%;
 }
 
-.servicespage-container:nth-child(odd) .icon {
+.servicespage-container:nth-child(odd) .picture-container {
   width: 55%;
   margin-right: 1rem;
   min-width: 38rem;
 }
 
-.service-icon:hover {
+.service-picture:hover {
   opacity: 1;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -696,7 +696,7 @@ footer p {
   }
 
 
-  .service-icon,
+  .service-picture,
   .service-description {
     height: 25rem;
     width: 65vw;
@@ -704,8 +704,8 @@ footer p {
   }
 
 
-  .servicespage-container:nth-child(even) .icon,
-  .servicespage-container:nth-child(odd) .icon,
+  .servicespage-container:nth-child(even) .picture-container,
+  .servicespage-container:nth-child(odd) .picture-container,
   .servicespage-container:nth-child(even) .service-description,
   .servicespage-container:nth-child(odd) .service-description {
     width: 65vw;
@@ -713,11 +713,11 @@ footer p {
     min-width: 65vw;
   }
 
-  .icon {
+  .picture-container {
     border-top: 4px solid #7a9cc66e;
   }
 
-  .icon:hover {
+  .picture-container:hover {
     border-top: 4px solid #7a9cc6;
   }
 
@@ -836,12 +836,12 @@ footer p {
     margin-top: 90px;
   }
 
-  .service-icon,
+  .service-picture,
   .service-description {
     width: 95vw;
   }
-  .servicespage-container:nth-child(even) .icon,
-  .servicespage-container:nth-child(odd) .icon,
+  .servicespage-container:nth-child(even) .picture-container,
+  .servicespage-container:nth-child(odd) .picture-container,
   .servicespage-container:nth-child(even) .service-description,
   .servicespage-container:nth-child(odd) .service-description {
     width: 95vw;
