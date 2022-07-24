@@ -233,7 +233,7 @@ p {
   background-size: cover;
   background-position: 0px -250px;
   padding-top: 5vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-color: #8297bea8;
 }
 
@@ -888,6 +888,18 @@ footer p {
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */ 
   .start , .start-services{
-    background-attachment: scroll ;
+    background-attachment: scroll;
+  }
+  
+  @media screen and (max-width: 1155px) {
+    .start , .start-services{
+      background-position: 0px -100px;
+    }
+  }
+
+  @media screen and (max-width: 1155px) {
+    .start , .start-services{
+      background-position: 0px 0px;
+    }
   }
 }
