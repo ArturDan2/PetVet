@@ -6,7 +6,7 @@ That is my very first project i made all by myself. It's pretty simple, created 
 
 ### `General info`
 
-This project was made for educational purposes. The idea behind id was to create a website for a made up veterinary clinic. All of the extra features like log in/sign in buttons and even some pages are a dummies made only for styling purposes. 
+This project was made for educational purposes. The idea behind it was to create a website for a made up veterinary clinic. All of the extra features like log in/sign in buttons and even some pages are a dummies made only for styling purposes. 
 
 
 ### `Reflection`
