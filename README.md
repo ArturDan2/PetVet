@@ -23,4 +23,4 @@ JavaScript
 
 ### `Installation and Setup Instructions`
 
-Clone down this repository. Open the 'Glowna.html' file. 
+Clone down this repository and start it in your IDE. 
